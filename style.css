@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  display: flex;
+  align-items: center;
+  padding-left: 10vw;
+  background-color: rgb(94, 26, 196);
+}
+.container h1 {
+  font-size: 3.5vw;
+  line-height: 1.2;
+  margin-bottom: 3vw;
+}
+.container h1 span {
+  color: rgb(7, 162, 103);
+  border-bottom: 5px solid rgb(7, 162, 103);
+  border-radius: 10px;
+}
+.input {
+  width: 100%;
+  background-color: white;
+  margin: 3vw 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2vh 1vw;
+  border-radius: 10px;
+}
+.input input {
+  outline: 0;
+  border: 0;
+  width: 70%;
+  padding: 1vh 2vw;
+  font-size: 1.8vw;
+  font-family: system-ui;
+}
+.input img{
+    width: 2vw;
+    cursor: pointer;
+}
+.container button{
+    background-color: red;
+    border-radius: 20px;
+    padding: 1vh 1vw;
+    font-size: 2vw;
+    outline: none;
+    border: none;
+    padding-bottom: 2vh;
+    cursor: pointer;
+}
+.container button img{
+    transform: translateY(10px);
+    margin-right: 0.7vw;
+    width: 2vw;
+}
+@media (max-width:600px) {
+    body {
+        justify-content: center;
+      }
+      .container h1 {
+        font-size: 8vw;
+      }
+      .input {
+        width: 90%;
+        margin: 7vw 0;
+        justify-content: center;
+        padding: 2vh 1vw;
+      }
+      .input input {
+        font-size: 7vw;
+      }
+      .input img{
+          width: 6vw;
+      }
+      .container button{
+          padding: 1vh 5vw;
+          font-size: 5.7vw;
+          padding-bottom: 2vh;
+      }
+      .container button img{
+          width: 6vw;
+      }
+}
